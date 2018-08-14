@@ -15,6 +15,14 @@
 */
 
 //Code here
+var me = {}
+
+me.name = "Michael"
+me.age = 24
+
+me.name;
+
+
 
 
 
@@ -26,7 +34,14 @@
 */
 
 //Code here
+let favoriteThings = {}
 
+favoriteThings.band = "Symphonic"
+favoriteThings.food = "Thai"
+favoriteThings.person = "Jeremy"
+favoriteThings.book = "book"
+favoriteThings.movie = "Hunt for the Wilderpeople"
+favoriteThings.holiday = "Christmas"
 
 
 /*
@@ -34,6 +49,8 @@
 */
 
 //Code here
+favoriteThings.car = "Tesla"
+favoriteThings.brand = "apple"
 
 
 
@@ -42,6 +59,8 @@
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 
 
@@ -58,13 +77,20 @@
 //Code here
 
 
+let backPack = {}
+let item = 'firstPocket'
+backPack['item'] 
+backPack.firstPocket = 'chapstick'
+
+backPack.color = 'green'
+
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+backPack;
 
 
 /*
@@ -74,6 +100,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+console.log(backPack);
 
 
 
@@ -97,9 +124,8 @@ var user2 = {
 */
 
 //Code Here
-
-
-
+user2.name = 'Tyler S. McGinnis'
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -120,6 +146,7 @@ var user2 = {
 */
 
 //Code Here
+let methodCollection = {};
 
 
 
@@ -129,14 +156,20 @@ var user2 = {
 */
 
 //Code Here
-
-
+methodCollection.alertHello = function(){
+  alert('hello');
+}
+methodCollection.logHello = function(){
+  console.log('hello');
+}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
+methodCollection.alertHello;
+methodCollection.logHello;
 
 
 
@@ -148,6 +181,13 @@ var user2 = {
 */
 
 //Code Here
+var obj = {}
+function makePerson(name, birthday, ssn){
+  obj.name = name
+  obj.birthday = birthday
+  obj.ssn = ssn
+  return obj;
+}
 
 
 
@@ -159,5 +199,13 @@ var user2 = {
 */
 
 //Code Here
+
+function makeCard(cardNumber, expirationDate, securityCode){
+  var newCard = {}
+  newCard.cardNumber = cardNumber
+  newCard.expirationDate = expirationDate
+  newCard.securityCode = securityCode
+  return newCard
+}
 
 
